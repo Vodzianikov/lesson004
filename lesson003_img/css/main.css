@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Source+Sans+Pro:wght@300;700&display=swap');
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/ava7patterns_pattern_1301.png");
+    background-repeat: repeat;
+    background-size: 25%;
+    background-position: 21% 21%;
+    color: white;
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h1,
+h2,
+.h1,
+.h2,{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+
+.wrapper{
+    max-width: 850px;
+    min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(29, 29, 29, 0.5);
+    /* overflow: auto; */
+}
+
+.wrapper h1{
+    /* margin-bottom: 35px; */
+    margin: 0 0 35px 0;
+}
+
+.wrapper p{
+    text-align: left;
+    margin: 0 0 35px 0;
+}
+
+.wrapper img{
+    width: 30%;
+    margin: 0 0 35px 0;
+}
+
+.imgParalax{
+    width: 100%;
+    height: 25vh;
+    background-image: url("https://api.lorem.space/image/car?w=1000&h=640&hash=lh5z0qqv");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-attachment: fixed; */
+    background-position: center bottom;
+    transition: 0.4s;
+}
+
+.imgParalax:hover{
+
+    background-size: 200%;
+}
+
+.btnPress{
+    height: 25vh;
+    background: rgb(0,0,245);
+background: linear-gradient(180deg, rgba(0,0,245,1) 12%, rgba(36,0,0,1) 28%, rgba(14,255,0,1) 70%);
+margin: -20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.btn{
+    background-color: #000;
+    color:#fff;
+    text-decoration: none;
+    padding: 25px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    text-shadow: 0 -5px 0 red;
+    box-shadow: 0 15px 0 purple;
+    border-radius: 50% 0 50% 0;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    transition: 0.4s;
+
+    
+}
+
+.btn:hover{
+    text-shadow: 0  0 0 red;
+    box-shadow: 0 0  0 darkolivegreen;
+    top: 10px;
+    border-radius: 0 50% 0 50%;
+}
+
+.btn:focus,
+.btn:active{
+    text-shadow: 0  5px 0 purple;
+    box-shadow: 0 0  0 darkolivegreen;
+    top: 20px;
+}
